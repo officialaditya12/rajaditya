@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- loading screen -->
+     <div class="loader">
+        <div class="loader-text">Loading......</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+     </div>
+    <!-- Custom Cursor -->
+     <div class="cursor"></div>
+     <div class="cursor-follower"></div>
+    <!-- Navigation -->
+     <nav>
+        <div class="nav-container">
+            <div class="logo">AR</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contacts-section">Contact</a></li>
+                    <!-- <li><a href="#">Projects</a></li> -->
+                    
+                </ul>
+
+            <div style="display: flex; align-items:center;">
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle-icon moon">🌙</span>
+                    <span class="theme-toggle-icon sun">🌤️</span>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+
+     </nav>
+     <!-- MObile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacts-section">Contact</a>
+        <!-- <a href="#">Projects</a> -->
+    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Aditya Raj</h1>
+            <h2 class="hero-subtitle">Creative Developer</h2>
+            <p class="hero-description">Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology.</p>
+            <!-- <a href="#" class="cta-button">View my work</a> -->
+        </div>
+        <img class="hero-img" src="profile.PNG" alt="profile-img">
+        <spline-viewer class="hero-3d-model" url="https://prod.spline.design/UIBKWvJOCAcw4Dfu/scene.splinecode"></spline-viewer>
+    </section>
+    <!-- 3D Models -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.13/build/spline-viewer.js"></script>
+
+
+    <!-- GSAP plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script .js"></script>
+
+<!-- About section -->
+<section class="about-section" id="about">
+    <h1 class="about-title">About me</h1>
+    <div class="bento-grid">
+        <div class="card intro">
+            <h2 class="card-title">HI THERE, I'M ADITYA RAJ</h2>
+            <p class="card-text">
+                I specialize in frontend development,crafting dynamic, visually engaging, and highly responsive websites that provide seamless user experiences. With a strong foundation in HTML, CSS and Javascript, I focus on building modern web interfaces that are not only aesthetically appealing but also optimized for performance and accessibility.My expertise extends to advance frameworks like react and Tailwind CSS, enabling me to create interactive, scalable, and efficient applications. Whether it's designing sleek UI components, implementing smooth animations, or enhancing user interactions, my goal is to develop web solutions that are both functional and innovative.
+            </p>
+            <img src="gredients.png" alt="" class="background-img">
+            <div class="model-box">
+                <img class="info-3D" src="aditya-modified.png" alt="">
+            </div>
+        </div>
+        <div class="card tech">
+            <h2 class="card-title">FINTECH</h2>
+            <p class="card-text">I’m currently involved in the crypto and Web3 space, with active interests in investing, trading, and decentralized finance. I’m the founder of StockneX, a soon-to-launch fintech venture aimed at reshaping how individuals engage with markets and digital assets.
+            Our growing team at StockneX is working closely with experienced financial advisors, mutual fund consultants, and industry experts, building a powerful network to ensure both innovation and compliance in our offerings. We’re committed to bridging the gap between traditional finance and the evolving world of crypto and AI.
+                
+            Additionally, I’m proud to be a pre-launch investor in Ozak AI, a next-gen platform focused on intelligent automation and AI integration.
+                
+            I’m passionate about identifying future-ready opportunities and creating systems that empower users with smart financial tools.</p>
+            <img class="background-img" src="download.png" alt="">
+        </div>
+        
+        <div class="card time">
+            <h2 class="card-title">Available for Remote IT Work Globally.</h2>
+            <p class="card-text">Looking for remote IT job opportunities worldwide to contribute, grow, and collaborate globally.</p>
+            <img class="background-img" src="diagonal.png" alt="">
+        </div>
+        <div class="card passion">
+            <h2 class="card-title">PASSION FOR CODING</h2>
+            <p class="card-text">Solving problems and building solutions through code. Programming is my profession-it's my passion.I enjoy exploring new technologies and enhancing my skills.</p>
+            <img src="coding3.png" alt="" class="background-img">
+        </div>
+    </div>
+</section>
+<!-- Skill Section -->
+<section id="skills" class="skill-container">
+    <!-- <img src="skills.svg" alt="" class="skills-img" /> -->
+    <span class="skill-title">Skills</span>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          alt="HTML logo"
+        />
+        <span>HTML</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          alt="CSS logo"
+        />
+        <span>CSS</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          alt="JavaScript logo"
+        />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+          alt="Tailwind CSS logo"
+        />
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React logo"
+        />
+        <span>React js</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+          alt="Next js logo"
+        />
+        <span>Next js</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+          alt="mongodb logo"
+        />
+        <span>mongoDB</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
+          alt="Postman logo"
+        />
+        <span>Prisma</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+          alt="postgresql logo"
+        />
+        <span>PostgreSQL</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+          alt="Node js logo"
+        />
+        <span>Node js</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+          alt="Express js logo"
+        />
+        <span>Express js</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+          alt="Postman logo"
+        />
+        <span>Postman</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          alt="Python logo"
+        />
+        <span>Python</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+          alt="C++ logo"
+        />
+        <span>C++</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          alt="Git logo"
+        />
+        <span>Git</span>
+      </div>
+      <div class="skill-card">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+          alt="GitHub logo"
+        />
+        <span>GitHub</span>
+      </div>
+    </div>
+  </section>
+  <!-- contact section -->
+  <section class="contact-section" id="contacts-section">
+    <span class="contact-title">Contact me</span>
+    <div class="contact-container">
+      <p class="contact-subtitle">Let's connect! Fill the form or reach me through socials.</p>
+
+      <form class="contact-form">
+        <div class="input-group">
+          <input type="text" name="name" required />
+          <label>Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" required />
+          <label>Email Address</label>
+        </div>
+        <div class="input-group">
+          <textarea name="message" required></textarea>
+          <label>Your Message</label>
+        </div>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+
+      <div class="socials">
+        <a href="mailto:officiallyaditya03@gmail.com" target="_blank">📧 Email</a>
+        <a href="https://www.linkedin.com/in/nstwithadityaraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/officialaditya12" target="_blank">💻 GitHub</a>
+        <a href="https://twitter.com/raj185227" target="_blank">🐦 Twitter</a>
+        <a href="https://wa.me/9153276992" target="_blank">📱 Whatsapp</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
